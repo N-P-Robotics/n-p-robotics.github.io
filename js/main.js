@@ -1,4 +1,3 @@
-// Konfiguracja kolorów i czcionek pod Tailwind CDN
 tailwind.config = {
     theme: {
         extend: {
@@ -25,6 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
             const navContainer = document.getElementById('navbar-container');
             if (navContainer) {
                 navContainer.innerHTML = data;
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', function() {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+                }
             }
         })
         .catch(error => console.error('Błąd podczas ładowania menu:', error));
