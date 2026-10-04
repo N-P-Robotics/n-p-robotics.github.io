@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <link rel="icon" href="logo_no_bg.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&P Robotics | Hardware & Web Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-nprobotics-dark text-gray-300 font-sans antialiased">
+
+    <div id="navbar-container"></div>
+
+    <!-- Sekcja Start -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 flex flex-col items-center text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 font-tech tracking-tight">
+            Napisz do nas <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-nprobotics-accent to-blue-500">Już dziś</span>
+        </h1>
+        <p class="mt-4 max-w-2xl text-lg md:text-xl text-gray-400 mb-10">
+            Odpowiemy na wszystkie Twoje pytania
+        </p>
+
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <form action="https://formspree.io/f/xoevgzzv" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Imię</label>
+                        <input type="text" name="first_name" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-nprobotics-accent text-white placeholder-gray-600" placeholder="Jan">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Nazwisko</label>
+                        <input type="text" name="last_name" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-nprobotics-accent text-white placeholder-gray-600" placeholder="Kowalski">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">E-mail</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-nprobotics-accent text-white placeholder-gray-600" placeholder="jan@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Telefon</label>
+                        <input type="tel" name="phone" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-nprobotics-accent text-white placeholder-gray-600" placeholder="+48 123 456 789">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-2">Wiadomość</label>
+                    <textarea name="message" rows="5" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-nprobotics-accent text-white placeholder-gray-600 resize-none" placeholder="Opisz swój projekt..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-nprobotics-blue hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition shadow-lg">
+                    Wyślij wiadomość
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <! STOPKA >
+    <footer class="bg-gray-900 border-t border-gray-800 py-10 text-center">
+        <p class="text-gray-500">&copy; 2026 N&P Robotics</p>
+        <div class="mt-4 flex justify-center space-x-6">
+            <a href="https://github.com/N-P-Robotics" target="_blank" class="text-gray-400 hover:text-white transition">
+                GitHub
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
