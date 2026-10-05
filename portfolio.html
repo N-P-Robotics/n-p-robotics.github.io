@@ -9,41 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-nprobotics-dark text-gray-300 font-sans antialiased">
-
+<body class="min-h-screen flex flex-col bg-nprobotics-dark text-gray-300 font-sans antialiased">
     <div id="navbar-container"></div>
-    <section class="pt-32 pb-12 px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white font-tech tracking-tight">Nasze Realizacje</h1>
-        <p class="mt-4 text-gray-400 max-w-xl mx-auto">Zapoznaj się z wykonanymi przez nas projektami.</p>
-        <div class="w-24 h-1 bg-nprobotics-accent mx-auto mt-6 rounded"></div>
-    </section>
+    <main class="flex-grow">
+        <section class="pt-32 pb-12 px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white font-tech tracking-tight">Nasze Realizacje</h1>
+            <p class="mt-4 text-gray-400 max-w-xl mx-auto">Zapoznaj się z wykonanymi przez nas projektami.</p>
+            <div class="w-24 h-1 bg-nprobotics-accent mx-auto mt-6 rounded"></div>
+        </section>
+        <section id="portfolio" class="py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
+                
+                <! BOX 1 >
 
-
-    <! PORTFOLIO >
-    <section id="portfolio" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-
-
-            <! BOX 1 >
-
-
-            <div class="bg-nprobotics-card p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row items-center gap-8">
-                <div class="w-full md:w-1/2 h-64 bg-gray-800 rounded-lg overflow-hidden border border-gray-700">
-                    <img src="img/euro_agro.png" alt="Podgląd strony Euro-Agro-Pol-Trans" class="w-full h-full object-cover object-top transition duration-500 hover:scale-105">
+                
+                <div class="bg-nprobotics-card p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/2 h-64 bg-gray-800 rounded-lg overflow-hidden border border-gray-700">
+                        <img src="img/euro_agro.png" alt="Podgląd strony Euro-Agro-Pol-Trans" class="w-full h-full object-cover object-top transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-white mb-2">Strona dla firmy Euro-Agro-Pol-Trans</h3>
+                        <p class="text-nprobotics-accent text-sm mb-4">Web Development</p>
+                        <p class="text-gray-400 mb-6">
+                            Nowoczesna strona wizytówkowa zintegrowana z systemem zamówień i opinii. Zbudowana od podstaw z dbałością o detale i wydajność.
+                        </p>
+                        <a href="https://euro-agro.pl" target="_blank" class="text-white underline hover:text-nprobotics-accent transition">Zobacz projekt na żywo &rarr;</a>
+                    </div>
                 </div>
-                <div class="w-full md:w-1/2">
-                    <h3 class="text-2xl font-bold text-white mb-2">Strona dla firmy Euro-Agro-Pol-Trans</h3>
-                    <p class="text-nprobotics-accent text-sm mb-4">Web Development</p>
-                    <p class="text-gray-400 mb-6">
-                        Nowoczesna strona wizytówkowa zintegrowana z systemem zamówień i opinii. Zbudowana od podstaw z dbałością o detale i wydajność.
-                    </p>
-                    <a href="https://euro-agro.pl" target="_blank" class="text-white underline hover:text-nprobotics-accent transition">Zobacz projekt na żywo &rarr;</a>
-                </div>
+
+                
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
 
     <! STOPKA >
     <footer class="bg-gray-900 border-t border-gray-800 py-10 text-center mt-auto">
